@@ -1,4 +1,4 @@
-# from asyncore import read
+import json
 from bs4 import BeautifulSoup
 import pandas as pd
 
@@ -19,7 +19,6 @@ for index, tr in enumerate(soup.findAll('tr')):
     # Datalist.append(dataDict)
     # print(f'Index value is {index} and {val1}')
     # print(val1, val2)
-print(dataDict)
-finalDataFrame = pd.DataFrame.from_dict(dataDict)
-display(finalDataFrame)
-# print(soup.findAll(id))
+
+# This is for debugging purposes to see dictionary
+print(json.dumps(dataDict,sort_keys=False, indent=4))
