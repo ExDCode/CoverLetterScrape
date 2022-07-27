@@ -2,7 +2,7 @@ import openpyxl
 from bs4 import BeautifulSoup
 import pandas as pd
 
-htmlFile = open("index2.html", 'r')
+htmlFile = open("index.html", 'r')
 
 index = htmlFile.read()
 
